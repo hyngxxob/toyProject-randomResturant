@@ -1,0 +1,5 @@
+# Project exclude paths
+/node_modules/
+
+# 로그 위치 관련
+/logs/

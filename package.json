@@ -1,0 +1,21 @@
+{
+  "name": "toyproject-randomresturant",
+  "version": "1.0.0",
+  "description": "Random resturant recommendation service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restaurant",
+    "recommendation",
+    "random"
+  ],
+  "author": "Hyungseub-Kim",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
