@@ -11,7 +11,7 @@ const path = require('path');
 /**
  *  log library
  *  module       lib/logger
- *  author       HYUNGSEUBKIM
+ *  author       SUNGWONLEE
  *  version      1.0, 작업 내용
  */
 

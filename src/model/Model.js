@@ -1,5 +1,14 @@
+/**
+ *  사용자 데이터 처리
+ *  @module       model/Model
+ *  @author       HYUNGSEUBKIM
+ *  @version      1.0
+ */
+
+const Logger            = require('../lib/logger');
+
 // myBatis
-const Query             = require('../../database/Mybatis');
+const Query             = require('../database/Mybatis');
 
 /**
  *  사용자 입력
@@ -48,5 +57,5 @@ const searchMenu = async (requestData) => {
   };
 
   module.exports = {
-    searchMenu,
+    searchMenu
   };

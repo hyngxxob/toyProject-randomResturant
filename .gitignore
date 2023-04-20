@@ -1,5 +1,8 @@
 # Project exclude paths
 /node_modules/
 
+# Editor directories and files
+.vscode
+
 # 로그 위치 관련
 /logs/

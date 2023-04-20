@@ -5,9 +5,12 @@
  */
 const RequestAuthPass = [
 
+    { METHOD : 'POST' , URL : '/'  },
     { METHOD : 'POST' , URL : '/user/signUp'  },   /** 회원 가입        */
     { METHOD : 'POST' , URL : '/user/login'   },   /** 로그인          */
-  
+
+    { METHOD : 'GET' , URL : '/'  },
+    { METHOD : 'GET' , URL : '/user/isTest'  },
     { METHOD : 'GET'  , URL : '/favicon'      },   /** favicon        */
   ];
   

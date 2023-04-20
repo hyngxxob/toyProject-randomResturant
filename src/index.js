@@ -3,10 +3,10 @@ require('dotenv').config(({path : (__dirname + '/config/.env')}));
 
 const express = require('express');
 const app = express();
-const cors            = require('cors');          /* cors 모듈 사용 */
+const cors = require('cors');          /* cors 모듈 사용 */
+const routes = require("./routes");      /** router  모듈 사용  */
 const ejs = require("ejs");
 const mysql = require("mysql");
-// const routes = require("./routes");      /** router  모듈 사용  */
 const corsOptions = {
   origin : true,
   credentials : true
@@ -14,12 +14,12 @@ const corsOptions = {
 
 const PreInterceptor  = require('./middleware/PreInterceptor');
 const PostInterceptor = require('./middleware/PostInterceptor');
-// app.use(routes);
+
 
 // app.get('/', (req, res) => {
 //   res.send('Hello, World!');
 // });
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 app.set('views', './src/views');
@@ -38,6 +38,7 @@ app.use(PostInterceptor);
 app.get('/', (req, res) => {
     res.render('index');
 })
+app.use(routes);
 
 app.listen(process.env.SERVER_PORT, () => {
   console.log(`Server listening on port ${process.env.SERVER_PORT}`);
