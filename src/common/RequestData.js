@@ -12,7 +12,7 @@ const PayloadData           = require("./PayloadData");
  *  @summary
  *  요청 객체(요청된 값, db connect 정보)를 다루는 class
  *
- *  @author SUNGWONLEE <artjung77@gmail.com>
+ *  @author HYUNGSEOBKIM
  *  @version 1.0,
  *  @see None
  */

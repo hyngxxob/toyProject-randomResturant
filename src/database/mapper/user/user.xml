@@ -5,6 +5,6 @@
     <!-- 사용자 조회 -->
     <select id="dbSearch">
         SELECT *
-        FROM TP_MENU_SELECTOR
+        FROM RECOMMEND_MENU
     </select>
 </mapper>

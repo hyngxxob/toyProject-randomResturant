@@ -6,6 +6,7 @@
  */
 
 const Logger            = require('../lib/logger');
+const db  = require("../database/DataBase");
 
 // myBatis
 const Query             = require('../database/Mybatis');
@@ -40,12 +41,12 @@ const searchMenu = async (requestData) => {
     //   };
   
       /**  connection 객체  */
-      const connection = requestData.getConnection();
-  
+      // const connection = requestData.getConnection();
+      const conn = db.connection;
       /**  query 문장       */
       const statement = Query('USER','dbSearch');
       // const res = await connection.query(statement);
-      const res = await connection.exec(statement);
+      const res = await conn.query(statement);
   
       // return res[DB_RESULT.ROW_FIRST][DB_RESULT.AFFECTED_ROWS] === DB_RESULT.ONE;
       return 0;
